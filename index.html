@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--ícono favicon-->
     <link rel="shortcut icon" href="./assets/icons/android-chrome-192x192.png" type="image/x-icon">
     <!--Hoja de estilos css de manera externa-->
@@ -36,11 +37,11 @@
     <main>
         <section>
             <article class="parallax">
-                <h2>Cocinando Sin tacc</h2>
+                <h2 data-aos="zoom-in">Cocinando Sin tacc</h2>
                 <!--imagen a un costado-->
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error cum consequuntur eaque aspernatur totam, delectus minus, obcaecati ab voluptatibus facere est possimus exercitationem ipsa ducimus libero maxime illo doloremque animi?</p>
+                <p data-aos="zoom-in">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error cum consequuntur eaque aspernatur totam, delectus minus, obcaecati ab voluptatibus facere est possimus exercitationem ipsa ducimus libero maxime illo doloremque animi?</p>
             </article>
-            <article class="bloque">
+            <article data-aos="flip-right" class="bloque">
                 <h2 class="texto">Productos Destacados</h2>
                 <!--imagenes con los productos mas destacados-->
                 <h3 class="text__siguiente">Boxes</h3>
@@ -70,7 +71,10 @@
             <!--Icono de redes-->
         </article>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
