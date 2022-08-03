@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ícono favicon-->
+    <link rel="shortcut icon" href="./assets/icons/android-chrome-192x192.png" type="image/x-icon">
+    <!--hoja de estilos de manera externa-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Xaipe-Contacto</title>
+</head>
+<body>
+    <header> 
+        <a href="../index.html">
+            <img src="../assets/icons/apple-touch-icon.png" alt="logo-xaipe" width="100xp">
+        </a>
+
+    <!--mi barra de navegacíon-->
+    <nav>
+        <!--hipervínculos a mis distintas páginas web-->
+        <!--listas desordenadas-->
+        <ul>
+            <!--Enlaces relativos-->
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="./sobre-mi.html">Sobre mi</a></li>
+            <li> <a href="./productos.html">Productos</a></li>
+            <li> <a href="./preguntas-frecuntes.html">Preguntas frecuentes</a></li>
+            <li> <a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <main class="parallax2">
+
+        <!--Formulario de contacto-->
+        <form action="procesar.php" name="contacto" method="post">
+            <fieldset class="contenedor1">
+                <legend class="contacto1">Contáctate con nosotros</legend>
+                <div>
+                    <p class="text__contacto">Escribinos y hacenos tu pedido.
+                    </p>
+                    <p class="text__contacto">Te asesoramos y ayudamos ante cualquier consulta!</p>
+                </div>
+                <div> 
+                    <label>Nombre:</label>
+                        <input type="text" name="nombre" placeholder="pedro" required>
+                </div>
+
+                <div>
+                    <label>Apellido:</label>
+                        <input type="text" name="apellido" placeholder="salinas" required>
+                </div>
+
+                <div>
+                    <label>Email</label>
+                        <input type="email" name="apellido" placeholder="hola@servidor.com.ar" required>
+                </div>
+
+                <!--Comentario-->
+                <div>
+                    <h4>Mensaje</h4>
+                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <!--Botones-->
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+
+                <div>
+                    <button type="reset">Borrar formulario</button>
+                </div>
+
+                <div>
+                    <button type="button">Sin acciones</button>
+                </div>
+
+
+            </fieldset>
+
+
+        </form>
+    </main>
+
+    <footer>
+        <article class="foot">
+            <h4>By Xaipe momentos deliciosos sin tacc</h4>
+            <h4>Encontranos en</h4>
+            <h4>Redes</h4>
+            <!--Icono de redes-->
+            <!--Icono de redes-->
+            <!--Icono de redes-->
+        </article>
+    </footer>
+
+</body>
+</html>

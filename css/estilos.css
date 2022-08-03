@@ -1,0 +1,293 @@
+/*font descargada*/
+
+@font-face{
+    font-family: "raleway";
+    src: url("../assets/fonts/Raleway-MediumItalic.ttf");
+}
+
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: floralwhite;
+}
+/*header con flexbox*/
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: sticky;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+/*index*/
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.parallax{
+    width: 100%;
+    height: 600px;
+    background-image: url("../assets/backgrounds/tarta-brownie.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2{
+    width:100% ;
+    height: 500px;
+    background-image: url("../assets/backgrounds/IMG-20211211-WA0014.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bloque{
+    max-width: 500px;
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto{
+width: 100%;
+height: 200px;
+padding: auto;
+margin-top: auto;
+display: flex;
+align-items: center;
+
+}
+
+.text__siguiente{
+    width: 80%;
+    height: 50px;
+    padding: auto;
+    margin-top: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.img__siguiente{
+    width: 250px;
+    padding: 30px auto;
+    border-radius: 10px;
+}
+
+/*class para sobre mi*/
+.contenedor{
+    max-width: 500px;
+    width: 90%;
+    margin-left: 15px;
+}
+
+.textsobre{
+    width: 500px;
+    height: 60px;
+    font-size: 45px;
+    padding: auto;
+    margin-top: auto;
+    margin: auto;
+}
+
+.text__sobremi{
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    padding: auto;
+    margin-top: auto;
+}
+
+.text__parrafo{
+    max-width: 90%;
+    font-size: 18px;
+}
+
+.img__sobremi{
+    width: 50%;
+    padding: 30% auto;
+    border-radius: 10px;
+}
+
+/*bem aplicado a preguntas.frecuentes*/
+.text__pregunta{
+    width: 700px;
+    height: 30px;
+    font-size: 25px;
+    margin-top: auto;
+    padding: auto;
+}
+
+.text__parrafo1{
+    max-width: 90%;
+    font-size: 18px;
+    margin-top: auto;
+    padding: auto;
+}
+
+/*bem de contacto*/
+.contenedor1{
+max-width: 500px;
+width: 90%;
+margin-left: 1%;
+}
+
+.contacto1{
+    margin-top: auto;
+    padding: auto;
+font-size: 30px;
+}
+
+.text__contacto{
+    margin-top: auto;
+    padding: auto;
+    font-size: 20px;
+}
+
+.div{
+    height: 40px;
+    width: 700px;
+    margin: auto;
+    padding: auto;
+}
+
+/*productos*/
+
+.contenedor2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.imgproducto{
+    width: 250px;
+    height: 250px ;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+
+
+footer{
+width: 100%;
+background-color: beige;
+color: white;
+padding: 20px 20px;
+background-image: url("../assets/backgrounds/toa-heftiba-5-MNAjL81Iw-unsplash.jpg");
+background-size: cover;
+background-position: center;
+position: sticky;
+
+}
+
+.foot{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+/*media queris mobile*/
+
+@media (max-width: 576px){
+
+    /*index*/
+    header{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    nav{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul{
+        width: 30%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    ul li a{
+    font-size: 20px;
+    }
+
+    .bloque{
+        flex-direction: column;
+    }
+
+
+    .section2{
+        flex-direction: column;
+    }
+
+    .ifr{
+        width: 450px;
+        height: 280px;
+    }
+
+    .texto{
+        width: 400px;
+    }
+    .text__siguiente{
+        width: 300px;
+    }
+
+    /*Productos*/
+
+    .textsobre{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor2{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .imgproducto{
+        width: 230px;
+        height: 230px;
+    }
+
+
+}
+
+
+
