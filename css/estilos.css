@@ -18,6 +18,10 @@ html{
     letter-spacing: 1px;
     background-color: floralwhite;
 }
+
+body{
+    font-family: 'Raleway', sans-serif; ;
+}
 /*header con flexbox*/
 header{
     display: flex;
@@ -39,7 +43,7 @@ ul{
 ul li a {
     text-decoration: none;
     margin: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /*index*/
@@ -161,10 +165,11 @@ align-items: center;
 }
 
 /*bem de contacto*/
-.contenedor1{
-max-width: 500px;
-width: 90%;
+.contenedor1{;;
+max width: 500px;
+width: 80%;
 margin-left: 1%;
+
 }
 
 .contacto1{
@@ -220,6 +225,10 @@ position: sticky;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+}
+
+i {
+font-size: 2.1rem;
 }
 
 /*media queris mobile*/
