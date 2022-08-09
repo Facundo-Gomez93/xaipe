@@ -21,31 +21,22 @@ html{
 
 body{
     font-family: 'Raleway', sans-serif; ;
-}
-/*header con flexbox*/
-header{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    position: sticky;
+    background-color: floralwhite;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-}
 
-ul{
-    display: flex;
-    list-style-type: none;
+.navbar{
+    background-color: floralwhite;
 }
-
-ul li a {
-    text-decoration: none;
-    margin: 10px;
-    font-size: 1.5rem;
+.navbar-light .navbar-nav .nav-link{
+    color: black;
 }
-
+.navbar-collapse{
+    flex-grow: initial;
+}
+.navbar-nav{
+    font-size: 1.1rem;
+}
 /*index*/
 .section1{
     display: flex;
@@ -148,28 +139,20 @@ align-items: center;
     border-radius: 10px;
 }
 
-/*bem aplicado a preguntas.frecuentes*/
-.text__pregunta{
-    width: 700px;
-    height: 30px;
-    font-size: 25px;
-    margin-top: auto;
-    padding: auto;
-}
+/* preguntas.frecuentes*/
 
-.text__parrafo1{
-    max-width: 90%;
-    font-size: 18px;
-    margin-top: auto;
-    padding: auto;
+.accordion-button:not(.collapsed) {
+    color: darkorange;
 }
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.20rem #ff8907c2;
+    }
 
 /*bem de contacto*/
-.contenedor1{;;
+.contenedor1{
 max width: 500px;
 width: 80%;
 margin-left: 1%;
-
 }
 
 .contacto1{
@@ -236,7 +219,7 @@ font-size: 2.1rem;
 @media (max-width: 576px){
 
     /*index*/
-    header{
+    /* header{
         flex-direction: column;
         justify-content: space-between;
     }
@@ -255,7 +238,7 @@ font-size: 2.1rem;
     
     ul li a{
     font-size: 20px;
-    }
+    } */
 
     .bloque{
         flex-direction: column;
@@ -282,6 +265,7 @@ font-size: 2.1rem;
 
     .textsobre{
         width: 250px;
+        height: 40%;
         display: flex;
         justify-content: center;
     }
@@ -294,7 +278,9 @@ font-size: 2.1rem;
         width: 230px;
         height: 230px;
     }
-
+    
+    
+    
 
 }
 

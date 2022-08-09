@@ -15,45 +15,112 @@
 <body>
 
     <header> 
-        <a href="../index.html">
-            <img src="../assets/icons/apple-touch-icon.png" alt="logo-xaipe" width="100xp">
-        </a>
-        
-    <!--mi barra de navegacíon-->
-    <nav>
-    <!--hipervínculos a mis distintas páginas web-->
-    <!--listas desordenadas-->
-    <ul>
-        <!--Enlaces relativos-->
-        <li> <a href="../index.html">Inicio</a></li>
-        <li> <a href="./sobre-mi.html">Sobre mi</a></li>
-        <li> <a href="./productos.html">Productos</a></li>
-        <li> <a href="#">Preguntas frecuentes</a></li>
-        <li> <a href="./contacto.html">Contacto</a></li>
-    </ul>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/icons/apple-touch-icon.png" alt="logo-xaipe"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/sobre-mi.html">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./preguntas-frecuntes.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html" >Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <article class="contenedor">
-                <h2 class="textsobre">Preguntas frecuentes</h2>
-                <h4 class="text__pregunta">¿Con cuanto tiempo se realizan pedidos?</h4>
-                <p class="text__parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda natus aspernatur blanditiis expedita voluptatum, impedit veniam numquam dolorem. Odit aperiam deserunt ullam asperiores sunt ea voluptatibus fuga consequatur dicta?</p>
-                <h4 class="text__pregunta">¿Tienen envio a domicilio?</h4>
-                <p class="text__parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odit, molestiae ab voluptas amet quam tempora! Sequi ullam magnam dolore similique, fugiat ratione maxime! Officiis aliquid atque quidem doloremque inventore!</p>
-                <h4 class="text__pregunta">¿Cuánto cuesta el envío?</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis cupiditate, soluta reiciendis ut laboriosam maxime officia repellendus porro incidunt id vitae, facilis odit sequi, commodi blanditiis at quo iure!</p>
-                <h4 class="text__pregunta">¿Le puedo escribir un mensaje al desayuno?</h4>
-                <p class="text__parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque tempora laudantium ducimus consequuntur voluptates nulla, labore illum, magni nam explicabo. Placeat impedit reprehenderit velit libero quasi? Voluptatum, debitis autem?</p>
-                <h4 class="text__pregunta">¿Va decorado?</h4>
-                <p class="text__parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum similique quam adipisci consequatur, omnis suscipit vero iusto! Sit, eligendi, nemo, accusamus exercitationem enim dolore aliquid assumenda necessitatibus minus vero incidunt.</p>
-                <h4 class="text__pregunta">¿Cuánto miden las tartas grandes y las medianas?</h4>
-                <p class="text__parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, provident dolor a praesentium facere eligendi ratione cumque vero distinctio nostrum quam quia veniam perspiciatis debitis deserunt aut aliquid neque soluta?</p>
-
-            </article>
-        </section>
-
+        <h2 class="textsobre mb-2">Preguntas frecuentes</h2>
+        <section class="container mt-2">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Con cuanto tiempo se realizan los pedidos?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dicta ea in et. Laborum labore cumque quasi nemo architecto iure aspernatur, quae dolorum id, officiis reprehenderit. Fugit voluptates pariatur velit.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Tienen envío a domicilio?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum vel eligendi repellendus repudiandae illo facere animi laboriosam possimus, placeat dolor, excepturi facilis veniam, recusandae at iste quasi voluptatem totam!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Cuanto cuesta el envío?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, porro sequi. Itaque illo porro temporibus necessitatibus harum? Exercitationem, delectus inventore sunt quam facere culpa veritatis, rem, eum laborum quasi tempore.
+            </div>
+          </div>
+        </div>
+      </div>
+     
+</section>
+<section class="container mb-2"> 
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ¿Le puedo escribir un mensaje al desayuno?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore esse laudantium delectus temporibus, ipsam sint magnam dolor reiciendis eius! Dignissimos saepe impedit quos? Exercitationem ipsam est nihil eaque eligendi.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Va decorado?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates sunt tenetur. Eaque rerum at earum ab a. Praesentium maiores dolores quos debitis molestias recusandae id provident aliquam deleniti placeat.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                ¿Cuánto miden las tartas grandes y las medianas?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quam, facilis natus quasi maxime modi? At harum saepe culpa quae, ducimus magni amet neque quasi consequuntur cumque, ipsam ratione totam.</div>
+          </div>
+        </div>
+      </div>
+</section>
     </main>
 
     <footer>
