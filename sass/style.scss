@@ -2,7 +2,7 @@
 
 
 //variables 
-$backgroundPrincipal: floralwhite; 
+$backgroundPrincipal: floralwhite;  
 
 /*font descargada*/
 
@@ -30,7 +30,6 @@ body{
     background-color: $backgroundPrincipal;
 }
 
-
 .navbar{
     background-color: $backgroundPrincipal;
 }
@@ -51,9 +50,7 @@ body{
 }
 
 .section2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@extend .section1;
     align-items: center;
 }
 
@@ -196,9 +193,13 @@ font-size: 30px;
     justify-items: center;
 }
 
+@mixin img-size($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
 .imgproducto{
-    width: 250px;
-    height: 250px ;
+@include img-size(250px,250px);
     padding: 20px 20px;
     border-radius: 20px;
 }
