@@ -1,5 +1,4 @@
-@import "variables" ;
-
+@import "variables.scss" ; 
 
 
 /*font descargada*/
@@ -15,6 +14,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+$estilosColor: (
+negro: black,
+naranjaOscuro: darkorange,
+blanco: white
+);
 
 html{
     font-family: 'Raleway', sans-serif;;
@@ -32,7 +37,7 @@ body{
     background-color: $backgroundPrincipal;
 }
 .navbar-light .navbar-nav .nav-link{
-    color: black;
+    color: map-get( $estilosColor, negro  );
 }
 .navbar-collapse{
     flex-grow: initial;
@@ -151,7 +156,7 @@ align-items: center;
 /* preguntas.frecuentes*/
 
 .accordion-button:not(.collapsed) {
-    color: darkorange;
+    color: map-get($estilosColor, naranjaOscuro );
 }
 .accordion-button:focus {
     box-shadow: 0 0 0 0.20rem #ff8907c2;
@@ -206,8 +211,8 @@ font-size: 30px;
 
 footer{
 width: 100%;
-background-color: beige;
-color: white;
+background-color: $backgroundOther;
+color: map-get($estilosColor, blanco );
 padding: 20px 20px;
 background-image: url("../assets/backgrounds/toa-heftiba-5-MNAjL81Iw-unsplash.jpg");
 background-size: cover;
