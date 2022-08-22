@@ -49,14 +49,17 @@
     <main class="parallax2">
 
         <!--Formulario de contacto-->
-        <form action="procesar.php" name="contacto" method="post">
-            <fieldset class="contenedor1">
-                <legend class="contacto1">Contáctate con nosotros</legend>
-                <div>
-                    <p class="text__contacto">Escribinos y hacenos tu pedido.
-                    </p>
-                    <p class="text__contacto">Te asesoramos y ayudamos ante cualquier consulta!</p>
-                </div>
+        <div class="container"> 
+        <legend class="contacto1">Contáctate con nosotros</legend>
+        <div>
+            <p class="text__contacto">Escribinos y hacenos tu pedido.
+            </p>
+            <p class="text__contacto">Te asesoramos y ayudamos ante cualquier consulta!</p>
+        </div>
+
+        </div>
+        <form class="form-contacto" action="procesar.php" name="contacto" method="post">
+            
                 <div> 
                     <label>Nombre:</label>
                         <input type="text" name="nombre" placeholder="pedro" required>
@@ -92,7 +95,7 @@
                 </div>
 
 
-            </fieldset>
+            
 
 
         </form>
