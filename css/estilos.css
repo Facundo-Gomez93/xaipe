@@ -141,7 +141,7 @@ body {
   margin-left: 10px; }
 
 .form-contacto {
-  border: 1px solid;
+  border: 2px solid;
   padding: 20px; }
 
 .contacto1 {
@@ -153,6 +153,20 @@ body {
   margin-top: auto;
   padding: auto;
   font-size: 20px; }
+
+.form-contacto button, .form-contacto textarea, .form-contacto input {
+  width: 100%;
+  padding: 0.2rem;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid floralwhite;
+  color: black; }
+
+.form-contacto button {
+  background-color: floralwhite;
+  border: 0;
+  text-transform: uppercase; }
 
 /*productos*/
 .contenedor2 {
@@ -175,7 +189,9 @@ footer {
   background-image: url("../assets/backgrounds/toa-heftiba-5-MNAjL81Iw-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  position: sticky; }
+  position: sticky;
+  font-weight: 900;
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 .foot {
   display: grid;
