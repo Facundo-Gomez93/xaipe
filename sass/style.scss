@@ -38,6 +38,8 @@ body{
 }
 .navbar-light .navbar-nav .nav-link{
     color: map-get( $estilosColor, negro  );
+    text-shadow: 0 0 0.2em $backgroundDos, 0 0 0.2em $backgroundDos,
+		0 0 0.2em $backgroundDos
 }
 .navbar-collapse{
     flex-grow: initial;

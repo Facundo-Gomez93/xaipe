@@ -23,7 +23,8 @@ body {
   background-color: floralwhite; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: black; }
+  color: black;
+  text-shadow: 0 0 0.2em #efd1bc, 0 0 0.2em #efd1bc, 0 0 0.2em #efd1bc; }
 
 .navbar-collapse {
   flex-grow: initial; }
