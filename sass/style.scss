@@ -199,18 +199,26 @@ margin-left: 10px
     border: 2px solid;
     padding: 20px;
     @extend .section1;
+    background-color: $backgroundContacto;
+    text-shadow: 0 0 0.2em white;
+
 }
 
 .contacto1{
     margin-top: auto;
     padding: auto;
 font-size: 30px;
+color: $colorDos;
+font-weight: 100;
+text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .text__contacto{
     margin-top: auto;
     padding: auto;
     font-size: 20px;
+    color: $colorDos;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 .form-contacto button, .form-contacto textarea, .form-contacto input {
     width: 100%;

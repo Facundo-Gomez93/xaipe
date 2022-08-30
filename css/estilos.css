@@ -158,17 +158,24 @@ body {
 
 .form-contacto {
   border: 2px solid;
-  padding: 20px; }
+  padding: 20px;
+  background-color: #d5ad92;
+  text-shadow: 0 0 0.2em white; }
 
 .contacto1 {
   margin-top: auto;
   padding: auto;
-  font-size: 30px; }
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 .text__contacto {
   margin-top: auto;
   padding: auto;
-  font-size: 20px; }
+  font-size: 20px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 .form-contacto button, .form-contacto textarea, .form-contacto input {
   width: 100%;
