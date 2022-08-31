@@ -33,6 +33,9 @@ body {
   font-size: 1.1rem; }
 
 /*index*/
+.carroza {
+  width: 650px; }
+
 .section1, .section2, .parallax2, .form-contacto {
   display: flex;
   flex-direction: column;
@@ -50,8 +53,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.textoIndex1 {
+  color: black;
+  text-shadow: 0 0 0.2em white;
+  text-align: center; }
+
 .textoIndex {
-  font-weight: 900; }
+  font-weight: 900;
+  color: black;
+  text-shadow: 0 0 0.2em white;
+  text-align: justify; }
 
 .parallax2 {
   width: 100%;
@@ -65,29 +76,33 @@ body {
   font-weight: 900;
   color: black; }
 
-.bloque {
-  max-width: 500px;
-  width: 90%;
-  margin-left: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+.destacados {
+  background-color: beige; }
 
 .texto {
   width: 100%;
-  height: 200px;
+  height: 50px;
   padding: auto;
   margin-top: auto;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  color: black; }
+
+.divTexto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px; }
 
 .text__siguiente {
   width: 80%;
   height: 50px;
   padding: auto;
   margin-top: auto;
-  display: flex;
-  align-items: flex-start; }
+  color: black;
+  text-align: center; }
 
 .img__siguiente {
   width: 250px;
@@ -113,6 +128,11 @@ body {
   margin: auto;
   font-weight: 900; }
 
+.divTex1 {
+  background-color: beige;
+  margin: 10px;
+  border-radius: 10px; }
+
 .text__sobremi {
   width: 400px;
   height: 50px;
@@ -121,13 +141,18 @@ body {
   margin-top: auto; }
 
 .text__parrafo {
-  max-width: 100%;
-  font-size: 18px; }
+  max-width: 90%;
+  font-size: 18px;
+  margin: 10px;
+  color: black;
+  text-align: justify; }
 
 .img__sobremi {
-  width: 80%;
+  width: 500px;
+  height: 500px;
   padding: 30% auto;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin: 10px; }
 
 /* preguntas.frecuentes*/
 .accordion-button:not(.collapsed) {
@@ -143,17 +168,24 @@ body {
 
 .form-contacto {
   border: 2px solid;
-  padding: 20px; }
+  padding: 20px;
+  background-color: #d5ad92;
+  text-shadow: 0 0 0.2em white; }
 
 .contacto1 {
   margin-top: auto;
   padding: auto;
-  font-size: 30px; }
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 .text__contacto {
   margin-top: auto;
   padding: auto;
-  font-size: 20px; }
+  font-size: 20px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 .form-contacto button, .form-contacto textarea, .form-contacto input {
   width: 100%;
