@@ -162,6 +162,13 @@ justify-items: center;
     font-weight: $font-weigth;
 }
 
+.divTex1{
+    background-color: $backgroundOther;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
 .text__sobremi{
     width: 400px;
     height: 50px;
@@ -171,14 +178,19 @@ justify-items: center;
 }
 
 .text__parrafo{
-    max-width: 100%;
+    max-width: 90%;
     font-size: 18px;
+    margin: 10px;
+    color: $colorLetra;
+    text-align: justify;
 }
 
 .img__sobremi{
-    width: 80%;
+    width: 500px;
+    height: 500px;
     padding: 30% auto;
     border-radius: 10px;
+    margin: 10px;
 }
 
 /* preguntas.frecuentes*/

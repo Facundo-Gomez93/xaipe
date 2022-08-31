@@ -128,6 +128,11 @@ body {
   margin: auto;
   font-weight: 900; }
 
+.divTex1 {
+  background-color: beige;
+  margin: 10px;
+  border-radius: 10px; }
+
 .text__sobremi {
   width: 400px;
   height: 50px;
@@ -136,13 +141,18 @@ body {
   margin-top: auto; }
 
 .text__parrafo {
-  max-width: 100%;
-  font-size: 18px; }
+  max-width: 90%;
+  font-size: 18px;
+  margin: 10px;
+  color: black;
+  text-align: justify; }
 
 .img__sobremi {
-  width: 80%;
+  width: 500px;
+  height: 500px;
   padding: 30% auto;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin: 10px; }
 
 /* preguntas.frecuentes*/
 .accordion-button:not(.collapsed) {
