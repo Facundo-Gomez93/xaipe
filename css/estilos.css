@@ -238,8 +238,14 @@ i {
 @media (max-width: 576px) {
   .bloque {
     flex-direction: column; }
+  .divTexto {
+    flex-direction: column;
+    align-items: center; }
+  .img__siguiente {
+    width: 340px; }
   .section2 {
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 10px; }
   .ifr {
     width: 100%;
     height: 280px; }
@@ -257,8 +263,8 @@ i {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .imgproducto {
-    width: 230px;
-    height: 230px; }
+    width: 320px;
+    height: 320px; }
   .contenedor {
     display: flex;
     flex-direction: column;
@@ -266,6 +272,16 @@ i {
     margin: 2px;
     align-items: center; }
   .img__sobremi {
-    width: 300px; }
+    width: 380px;
+    height: 380px; }
   .text__sobremi {
-    width: 200px; } }
+    width: 30px;
+    font-size: 40px; }
+  /*footer*/
+  .foot h4 {
+    font-size: 1.2rem;
+    margin: 10px; }
+  .foot p a {
+    display: flex;
+    flex-direction: column;
+    margin: 5px; } }
