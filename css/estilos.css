@@ -231,13 +231,10 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center; }
 
-i {
-  font-size: 2.1rem; }
-
 /*media queris mobile*/
 @media (max-width: 576px) {
   .carroza {
-    width: 540px; }
+    width: 100%; }
   .bloque {
     flex-direction: column; }
   .divTexto {

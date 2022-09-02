@@ -287,16 +287,14 @@ text-shadow: black 0.1em 0.1em 0.2em;
     justify-items: center;
 }
 
-i {
-font-size: 2.1rem;
-}
+
 
 /*media queris mobile*/
 
 @media (max-width: 576px){
 
     .carroza{
-        width: 540px;
+        width: 100%;
     }
 
     .bloque{
