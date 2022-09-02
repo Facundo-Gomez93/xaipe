@@ -236,6 +236,8 @@ i {
 
 /*media queris mobile*/
 @media (max-width: 576px) {
+  .carroza {
+    width: 540px; }
   .bloque {
     flex-direction: column; }
   .divTexto {
